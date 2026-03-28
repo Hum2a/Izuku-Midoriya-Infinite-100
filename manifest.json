@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Izuku Midoriya - Infinite 100",
   "description": "Izuku at Full Cowl 100% against Overhaul (Season 4) — electric green and black GX theme with a subtle Eri golden glow and cool silver-gray undertones. Animated wallpaper, background music, shaders (Eri's Blessing tint + Infinite 100% wave), sounds, and web styling for YouTube, Google, Reddit, X, Discord, GitHub, Netflix, Spotify, and more. Replace wallpaper in the folder if you use your own assets.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "512": "infinite100_icon.png"
   },
