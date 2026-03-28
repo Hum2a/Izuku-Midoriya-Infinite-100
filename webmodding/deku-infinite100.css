@@ -77,7 +77,11 @@ a:any-link:hover {
 }
 
 ::selection {
-  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 34%, var(--deku-eri-gold) 12%, transparent);
+  background: color-mix(
+    in srgb,
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 82%, var(--deku-eri-gold)) 42%,
+    transparent
+  );
   color: inherit;
 }
 
@@ -88,8 +92,8 @@ textarea::placeholder {
 }
 
 * {
-  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 52%, var(--deku-eri-gold) 8%, transparent)
-    color-mix(in srgb, env(-opera-gx-background-color, var(--deku-bg-darker)) 42%, transparent);
+  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 88%, var(--deku-eri-gold))
+    color-mix(in srgb, env(-opera-gx-background-color, var(--deku-bg-darker)) 50%, transparent);
 }
 
 *::-webkit-scrollbar {
