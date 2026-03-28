@@ -1,0 +1,13 @@
+// Infinite 100% — animated surge wave (SkSL)
+uniform shader iChunk;
+uniform float2 iChunkSize;
+uniform float iFrame;
+
+const float LENGTH = 120.0;
+const float STRENGTH = 0.01;
+
+vec4 main(vec2 xy) {
+  vec2 uv = xy / iChunkSize.xy;
+  uv.y += sin(xy.x / LENGTH + iFrame) * STRENGTH;
+  return iChunk.eval(uv * iChunkSize.xy);
+}

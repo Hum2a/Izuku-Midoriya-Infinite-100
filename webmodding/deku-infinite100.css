@@ -1,0 +1,115 @@
+/* Izuku Midoriya: Infinite 100% — global bucket (Season 4 / Eri arc); green-black + Eri gold glow + cool gray */
+
+:root {
+  --deku-accent: #0fdb6e;
+  --deku-accent-hover: #4dff9a;
+  --deku-accent-muted: rgba(15, 219, 110, 0.62);
+  --deku-accent-subtle: rgba(15, 219, 110, 0.22);
+  --deku-bg-dark: #0a1412;
+  --deku-bg-darker: #060d0c;
+  --deku-bg-elevated: #142220;
+  --deku-border: rgba(15, 219, 110, 0.28);
+  --deku-text: #e8eef4;
+  --deku-text-muted: #95a5a2;
+
+  --deku-hero: #2ef598;
+  --deku-deep: #00796b;
+  --deku-mint: #c8ddd4;
+  --deku-eri-gold: #ffd54f;
+  --deku-eri-gold-mist: rgba(255, 213, 79, 0.11);
+  --deku-eri-gold-glow: rgba(255, 224, 130, 0.08);
+  --deku-eri-gray: #9eada8;
+  --deku-void-mist: rgba(14, 22, 24, 0.48);
+  --deku-hero-mist: rgba(46, 245, 152, 0.12);
+}
+
+@keyframes infinite100-mist-shift {
+  0% {
+    opacity: 0.52;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.88;
+    transform: scale(1.05) translate3d(1.2%, -0.8%, 0);
+  }
+  100% {
+    opacity: 0.62;
+    transform: scale(1.07) translate3d(-0.8%, 1%, 0);
+  }
+}
+
+html {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(65% 55% at 48% 38%, var(--deku-eri-gold-mist), transparent 58%),
+    radial-gradient(80% 60% at 12% 20%, var(--deku-hero-mist), transparent 55%),
+    radial-gradient(72% 52% at 88% 78%, var(--deku-void-mist), transparent 52%),
+    radial-gradient(45% 40% at 92% 12%, var(--deku-eri-gold-glow), transparent 45%),
+    linear-gradient(
+      122deg,
+      color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 12%, transparent),
+      color-mix(in srgb, var(--deku-eri-gray) 8%, transparent),
+      color-mix(in srgb, env(-opera-gx-background-color, var(--deku-mint)) 10%, transparent)
+    );
+  animation: infinite100-mist-shift 24s ease-in-out infinite alternate;
+}
+
+a:any-link {
+  color: env(-opera-gx-accent-color, var(--deku-hero));
+}
+
+a:any-link:hover {
+  color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 78%, var(--deku-eri-gold));
+}
+
+:focus-visible {
+  outline: 2px solid env(-opera-gx-accent-color, var(--deku-hero));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--deku-eri-gold) 22%, transparent);
+}
+
+::selection {
+  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 34%, var(--deku-eri-gold) 12%, transparent);
+  color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--deku-text-muted) !important;
+  opacity: 1 !important;
+}
+
+* {
+  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 52%, var(--deku-eri-gold) 8%, transparent)
+    color-mix(in srgb, env(-opera-gx-background-color, var(--deku-bg-darker)) 42%, transparent);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: color-mix(in srgb, env(-opera-gx-background-color, #0a1520) 38%, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    env(-opera-gx-accent-color, var(--deku-hero)),
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 40%, var(--deku-eri-gold))
+  );
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--deku-hero)) 85%, var(--deku-eri-gold));
+}

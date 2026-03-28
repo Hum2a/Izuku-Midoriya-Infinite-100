@@ -1,0 +1,93 @@
+/* Izuku Midoriya: Infinite 100% — https://*.opera.com (standalone :root; global sheet not injected here) */
+:root {
+  --deku-accent: #0fdb6e;
+  --deku-accent-hover: #4dff9a;
+  --deku-bg-dark: #0a1412;
+  --deku-bg-elevated: #142220;
+  --deku-border: rgba(15, 219, 110, 0.28);
+  --deku-text: #e8eef4;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--deku-text) !important;
+  background-color: env(-opera-gx-background-color, var(--deku-bg-dark)) !important;
+}
+
+p,
+li,
+span,
+td,
+th,
+label,
+figcaption,
+blockquote,
+div[class*="text"],
+div[class*="content"] {
+  color: inherit !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deku-text) !important;
+}
+
+a[href]:not([class*="btn"]):not([role="button"]) {
+  color: env(-opera-gx-accent-color, var(--deku-accent)) !important;
+}
+
+a[href]:hover {
+  color: var(--deku-accent-hover) !important;
+}
+
+a[href]:visited {
+  color: color-mix(in srgb, #00796b 68%, #9eada8) !important;
+}
+
+header,
+nav,
+footer,
+[role="navigation"],
+[role="banner"],
+[role="contentinfo"] {
+  border-color: var(--deku-border) !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  background-color: var(--deku-bg-elevated) !important;
+  color: var(--deku-text) !important;
+  border: 1px solid var(--deku-border) !important;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--deku-accent) !important;
+  box-shadow:
+    0 0 0 2px rgba(15, 219, 110, 0.32),
+    0 0 12px rgba(255, 213, 79, 0.12) !important;
+}
+
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  accent-color: var(--deku-accent);
+}
+
+hr {
+  border-color: var(--deku-border) !important;
+  opacity: 1 !important;
+}
+
+code,
+pre,
+kbd {
+  background-color: var(--deku-bg-elevated) !important;
+  color: var(--deku-accent-hover) !important;
+  border: 1px solid var(--deku-border) !important;
+}
