@@ -1,6 +1,6 @@
-# Izuku Midoriya: Infinite 100% — Opera GX mod
+# Izuku Midoriya - Infinite 100 — Opera GX mod
 
-Season 4 / Overhaul arc energy: green-and-black GX theme, subtle Eri gold glow in web styling, shaders **Eri's Blessing** and **Infinite 100%**, plus site-specific CSS. Background music: `music/Deku-vs-Overhaul.mp3`. Icon: `infinite100_icon.png` (512×512). Swap wallpaper if you like.
+Season 4 / Overhaul arc energy: green-and-black GX theme, subtle Eri gold glow in web styling, shaders **Eri Blessing** and **Infinite 100**, plus site-specific CSS. Background music: `music/Deku-vs-Overhaul.mp3`. Icon: `infinite100_icon.png` (512×512). Swap wallpaper if you like.
 
 ## Structure
 
@@ -15,7 +15,7 @@ OperaGX/
 ├── music/                 # Background music (MP3/WAV; list in `manifest.json`)
 ├── sound/                 # Browser sounds (clicks, tabs, etc.)
 ├── keyboard/              # Keyboard typing sounds
-├── shader/                # Shaders: Eri's Blessing, Infinite 100%
+├── shader/                # Shaders: Eri Blessing, Infinite 100
 ├── webmodding/            # `deku-infinite100.css` (global), `sites-01`…`06`, `deku-infinite-opera.css`
 └── scripts/               # Helper scripts
 ```
@@ -67,7 +67,7 @@ GX accent is a slightly punchier green (HSL ~148, 88%, 52% dark). Web pages also
 
 ## Shaders
 
-- **Eri's Blessing**: Warm green-gold screen tint (SkSL)
-- **Infinite 100%**: Animated wave / surge
+- **Eri Blessing**: Warm green-gold screen tint (SkSL)
+- **Infinite 100**: Animated wave / surge
 
 Toggle in mod settings.
